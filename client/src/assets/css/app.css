@@ -1,0 +1,9 @@
+body {
+    background: #000;
+}
+
+#text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}

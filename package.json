@@ -1,0 +1,30 @@
+{
+  "name": "initial-node-react-setup",
+  "version": "1.0.0",
+  "description": "Initial setup for Node-React app",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "npm run build-cli && node server/app.js",
+    "dev": "concurrently \"nodemon server/app\" \"npm run dev --prefix client\"",
+    "server": "nodemon server/app",
+    "build-cli": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stickmeo/initial-node-react-setup.git"
+  },
+  "author": "Stickmeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stickmeo/initial-node-react-setup/issues"
+  },
+  "homepage": "https://github.com/stickmeo/initial-node-react-setup#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}
